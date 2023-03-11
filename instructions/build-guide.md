@@ -164,3 +164,21 @@
     <div align="center">
         <img src="images/final_assembly/final_assembly_9.jpg" alt="assembly 8" height="300">
     <div>
+1. Take you motor and solder 2 wires (approx 15cm in length, each) to the contacts on the back of your DC motor.
+    <div align="center">
+        <img src="images/motor/motor_solder_wires.jpg" alt="dc motor with wires attached" height="300">
+    <div>
+1. Open the drive belt bag, and attach 2 rubber belts along the length of the body. These will act as shockmounts and make the motor a tight fit. Make sure that the bands "cross" at the front of the motor. If you've done it right, the bands will run parallel down the length of the motor.
+    <div align="center">
+        <img src="images/motor/band_back.jpg" alt="motor band back" height="300">
+        <img src="images/motor/band_front.jpg" alt="motor band front" height="300">
+        <img src="images/motor/band_wrapping.jpg" alt="motor second band" height="300">
+        <img src="images/motor/parallel_bands.jpg" alt="motor with parallel bands" height="300">
+    <div>
+1. Insert the motor into the large diameter bore, through the back and mid plate.
+1. Slide the `motor_drive_pulley_v3` onto the end of the motor
+1. [Complete the wiring diagram](./wiring-diagram.md)
+1. Insert the completed circuit between mid plate and back plate. You can affix the PCBs and switch using hot glue.
+1. Mount a drive belt; loop it around the motor's drive pulley, the central pulley, and the tensioner pulley.
+    - If the belt is too loose, try a smaller diameter belt, or swivel the tensioner to tighten the belt.
+1. All done!
