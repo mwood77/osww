@@ -10,13 +10,17 @@
  * directionalPinA = this is the pin that's wired to IN1 on your L298N circuit board
  * directionalPinB = this is the pin that's wired to IN2 on your L298N circuit board
  */
-int directionalPinA = 10;
-int directionalPinB = 11;
+int directionalPinA = 10;   // GPIO 10
+int directionalPinB = 11;   // GPIO 11
 
 // direction can be:
 //      "BOTH"
 //      "CW"    <-- Clockwise
 //      "CCW"   <-- Counter Clockwise
+//
+// -- If you want your winder to turn clockwise only, replace the direction value with "CW"
+// -- If you want your winder to turn counter clockwise only, replace the direction value with "CCW"
+// -- If you want your winder to turn both directions, replace the direction value with "BOTH"
 struct RUNTIME_VARS
 {
 	String direction = "BOTH";

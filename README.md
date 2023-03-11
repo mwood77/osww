@@ -20,10 +20,18 @@
 * Minimal electronics / programming experience required
 * Easy to print!
 
-<hr>
+
+## Prerequisites
+
+### Download and install the following:
+1. [Arduino IDE](https://www.arduino.cc/en/software)
+1. [Add Raspberry Pi Pico to the Arduino IDE](https://www.upesy.com/blogs/tutorials/install-raspberry-pi-pico-on-arduino-ide-software)
+   - Do not proceed past the heading "**Upload a program to the Pi Pico**"
 
 ## Build Instructions
 1. [Bill of Materials (what you need to buy)](./instructions/bom-requirements.md)
 1. [Printing Recommendations](./instructions/printing-recommendations.md)
    - [Model Files](./models)
 1. [Build Guide](./instructions/build-guide.md)
+1. [Wiring Diagram](./instructions/wiring-diagram.md)
+1. [Upload the Code](./instructions/upload-code.md)

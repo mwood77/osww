@@ -33,7 +33,7 @@ This means that you'll be able to construct a 3-watch winder. Remember that the 
 
 |     |  Quantity per Order | Link / Part Name                                                             |  Comments                                              |  Cost Incl. Shipping |
 | :-: | :------------: | :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |:-----:|
-| 🔲 | 1               | [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)      |                                                                       | $5.00 |
+| 🔲 | 1               | [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)      |    Wireless: **NO** & GPIO Headers: **NO**                                                                   | $5.00 |
 | 🔲 | 1               | [608ZZ bearing pack ](https://s.click.aliexpress.com/e/_DnpVZLl)                  | 10 bearings per pack                                                  | $6.00 |
 | 🔲 | 1               | [Electric Motor with gear reduction](https://s.click.aliexpress.com/e/_DE3i8IP)   | Select: "35RPM" & "6V"                                                | $6.00 |
 | 🔲 | 1               | [L298N Driver Board](https://s.click.aliexpress.com/e/_DlNaVcV)                   | Single unit                                                           | $3.15 |
