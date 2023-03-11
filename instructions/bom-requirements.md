@@ -25,7 +25,7 @@ This means that you'll be able to construct a 3-watch winder. Remember that the 
 
 
 ### Total cost of required Parts
-- **$37.00 (February 2023)**
+- **$40.00 (February 2023)**
 
 > The following tables contains affiliate links to Aliexpress; **you do not pay an inflated price because of this.** Should you decide to use another supplier, please ensure that you cross-reference this table and buy identical components. 
 
@@ -54,4 +54,4 @@ The following parts list will allow you to add:
 | :-: | :------------: | :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |:-----:
 | 🔲  | 1              | [Steel Spring](https://s.click.aliexpress.com/e/_DcHXiu3)                         | Select: "25mm Length" & "Wire Diameter 0.4mm" & "Outer Diameter 10mm" | $2.60 |
 | 🔲  | 1              | [Felt](https://s.click.aliexpress.com/e/_DBK6FoB)                                 | Select: "25CMx85CM" & any colour you choose                                      | $1.50 |
-| 🔲  | 1              | [Keyboard Switches](https://s.click.aliexpress.com/e/_Deh6NoN)                    | I used keyboard switches, but you can use any you like                | $6.50 |
+| 🔲  | 1              | [Rocker Switch](https://s.click.aliexpress.com/e/_DnFAidJ)                    |  Select: any colour you wish & "Type1 12V LED" & "Wire Diameter 0.4mm" & "21x15mm 3Pin"                | $2.10 |

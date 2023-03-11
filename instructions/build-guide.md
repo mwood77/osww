@@ -164,6 +164,11 @@
     <div align="center">
         <img src="images/final_assembly/final_assembly_9.jpg" alt="assembly 8" height="300">
     <div>
+
+> If you're building a non-powered winder, you're done! If you're building a powered winder, continue beneath.
+
+### Powered Winder Final Steps
+
 1. Take you motor and solder 2 wires (approx 15cm in length, each) to the contacts on the back of your DC motor.
     <div align="center">
         <img src="images/motor/motor_solder_wires.jpg" alt="dc motor with wires attached" height="300">
