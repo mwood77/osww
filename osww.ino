@@ -9,9 +9,11 @@
  * 
  * directionalPinA = this is the pin that's wired to IN1 on your L298N circuit board
  * directionalPinB = this is the pin that's wired to IN2 on your L298N circuit board
+ * externalButton = OPTIONAL - If you want to use an external momentary button to pause operation, connect it to this pin along with a resistor to ground. If you need to use another pin, change the value here.
  */
 int directionalPinA = 10;   // GPIO 10
 int directionalPinB = 11;   // GPIO 11
+int externalButton = 14;    // GPIO 14
 
 // direction can be:
 //      "BOTH"
@@ -21,10 +23,15 @@ int directionalPinB = 11;   // GPIO 11
 // -- If you want your winder to turn clockwise only, replace the direction value with "CW"
 // -- If you want your winder to turn counter clockwise only, replace the direction value with "CCW"
 // -- If you want your winder to turn both directions, replace the direction value with "BOTH"
+//
+// timeToRotateInSeconds = this is how long the motor will rotate for without stopping. Default is 180 seconds (3 minutes)
+// timeToPauseInSeconds = this is how long the pause duration will be during motor operation. Default is 3 seconds
 struct RUNTIME_VARS
 {
 	String direction = "BOTH";
   bool routineRunning = false;
+  int timeToRotateInSeconds = 180;
+  int timeToPauseInSeconds = 3;
 };
 /*
  * *************************************************************************************
@@ -62,6 +69,7 @@ void setup()
 	// Prepare pins
 	pinMode(directionalPinA, OUTPUT);
 	pinMode(directionalPinB, OUTPUT);
+  pinMode(externalButton, INPUT);
 
   beginWindingRoutine();
   motor.determineMotorDirectionAndBegin();
@@ -69,11 +77,19 @@ void setup()
 
 void loop()
 {
-  if ((strcmp(userDefinedSettings.direction.c_str(), "BOTH") == 0) && currentSeconds >= 180)
+  // get physical button state
+	int buttonState = digitalRead(externalButton);
+
+	if (buttonState == HIGH) {
+    Serial.println("[STATUS] - Button pressed");
+    userDefinedSettings.routineRunning = !userDefinedSettings.routineRunning;
+  }
+
+  if ((strcmp(userDefinedSettings.direction.c_str(), "BOTH") == 0) && currentSeconds >= userDefinedSettings.timeToRotateInSeconds && userDefinedSettings.routineRunning)
   {
     currentSeconds = 0;
     motor.stop();
-    delay(3000);
+    delay((userDefinedSettings.timeToPauseInSeconds) * 1000);
 
     int currentDirection = motor.getMotorDirection();
     motor.setMotorDirection(!currentDirection);
@@ -81,14 +97,16 @@ void loop()
   
     motor.determineMotorDirectionAndBegin();
   } 
-  else if (currentSeconds >= 180) 
+  else if (currentSeconds >= userDefinedSettings.timeToRotateInSeconds && userDefinedSettings.routineRunning) 
   {
     currentSeconds = 0;
     Serial.println("[STATUS] - Motor Pause");
     motor.stop();
-    delay(3000);
+    delay((userDefinedSettings.timeToPauseInSeconds) * 1000);
 
     motor.determineMotorDirectionAndBegin();
+  } else if (!userDefinedSettings.routineRunning) {
+    motor.stop();
   }
 
 	delay(1000);

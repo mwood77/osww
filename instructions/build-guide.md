@@ -160,10 +160,31 @@
         <img src="images/final_assembly/final_assembly_8.jpg" alt="assembly 8" height="300">
     <div>
 1. Fully seat the watch jig assembly and let dry.
-1. After the assembly is dry, slide on the `clutchless_drive_pulley_v2` on the exposed 4mm rod. The model should be a tight fit, but if it isn't, you may attach a hot-melt nut and grub-screw or a fill the hot-melt nut hole with glue. Let dry.
-    <div align="center">
-        <img src="images/final_assembly/final_assembly_9.jpg" alt="assembly 8" height="300">
-    <div>
+
+1. Decide whether you want to use a clutchless drive pulley, or a clutch drive pulley. You may only build the clutch assembly if you've purchased the optional spring & felt, and printed these optional models:
+    - `spring_holder_v3`
+    - `top_hat_v2`
+
+    #### Clutchless Drive
+    1. After the assembly is dry, slide on the `clutchless_drive_pulley_v2` on the exposed 4mm rod. The model should be a tight fit, but if it isn't, you may attach a hot-melt nut and grub-screw or a fill the hot-melt nut hole with glue. Let dry.
+        <div align="center">
+            <img src="images/final_assembly/final_assembly_9.jpg" alt="assembly 8" height="300">
+        <div>
+
+    #### Clutch Drive
+    1. > Optional: After the assembly is dry, slide an M4 nylon washer down the metal rod. This is optional because you may or may not need it.
+    1. Slide the `spring_holder_v3` on to the exposed 4mm rod. The model should be a tight fit but must rotate freely around it's center axis.
+    1. Place the spring inside the the `spring_holder_v3`, ensuring the metal rod sits centered within the diameter of the spring; the spring should self center within the `spring_holder_v3`, inside an inner channel. 
+    1. Cut a piece of felt the same diameter as the `top_hat_v2` and cut a hole dead center; slide the felt onto the rod and let it sit ontop of the spring. 
+    1. Take one hot-melt nut and melt it into the `top_hat_v2`'s horizontal bore. Thread a screw into the hot-melt nut.
+        <div align="center">
+            <img src="images/final_assembly/top_hat_hot_melt_location.png" alt="top hat hot melt location" height="300">
+        <div>
+    1. Slide the `top_hat_v2` down the rod and compress the spring. Tighten the screw in the top hat; it should not rotate on the rod. This will take some trial and error to get the slip-point correct.
+    1. Beneath is a reference image to to show the order of each component during assembly. The red disk represents felt.
+        <div align="center">
+            <img src="images/final_assembly/clutch_exploded_assembly.png" alt="clutch exploded assembly" height="600">
+        <div>
 
 > If you're building a non-powered winder, you're done! If you're building a powered winder, continue beneath.
 
@@ -187,3 +208,13 @@
 1. Mount a drive belt; loop it around the motor's drive pulley, the central pulley, and the tensioner pulley.
     - If the belt is too loose, try a smaller diameter belt, or swivel the tensioner to tighten the belt.
 1. All done!
+
+# Coupling Winders
+
+### Required parts:
+- 4x `multi_clip` model
+- > Optional: High Position Tensioner Assembly
+
+1. The `multi_clip` model can couple OSWW units together.
+1. Attach 4 `multi_clip`s over the thicker diameter portions of the dowel assemblies of each OSWW unit - you should have 2 clips on top, and 2 on the bottom.
+1. Couple the pulleys of the secondary OSWW to the first OSWW using a spare drive belt. If you need to adjust the tension, swap the tensioner assembly to a High Position Tensioner Assembly

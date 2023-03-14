@@ -39,3 +39,5 @@
 | `watch_jig_v4` | 1 | 6 hours | ![watch_jig](images/printing/watch_jig_v4.png) |
 | `watch_mount_v7` | 1 | 2 hours | ![watch_mount](images/printing/watch_mount_v7.png) |
 | `multi_clip` | 4 | 0.25 hours p/unit | ![multi_clip](images/printing/multi_clip_v1.png) |
+| `spring_holder_v3` | 1 | 1 hours | ![spring_holder_v3](images/printing/spring_holder_v3.png) |
+| `top_hat_v2` | 4 | 0.25 hours | ![top_hat_v2](images/printing/top_hat_v2.png) |
