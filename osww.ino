@@ -78,8 +78,8 @@ void setup()
 void awaitWhileListening(int pauseInSeconds)
 {
   // While waiting for the 1 second to pass, actively monitor/listen for button press.
-  int delayEnd = to_msec_since_boot(get_absolute_time()) + (1000 * pauseInSeconds);
-  while (to_msec_since_boot(get_absolute_time()) < delayEnd) {
+  int delayEnd = millis() + (1000 * pauseInSeconds);
+  while (millis() < delayEnd) {
     // get physical button state
     int buttonState = digitalRead(externalButton);
 
