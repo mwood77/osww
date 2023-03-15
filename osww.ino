@@ -28,7 +28,7 @@ int externalButton = 14;    // GPIO 14
 // timeToPauseInSeconds = this is how long the pause duration will be during motor operation. Default is 3 seconds
 struct RUNTIME_VARS
 {
-	String direction = "BOTH";
+  String direction = "BOTH";
   bool routineRunning = false;
   int timeToRotateInSeconds = 180;
   int timeToPauseInSeconds = 3;
@@ -51,14 +51,14 @@ MotorControl motor(directionalPinA, directionalPinB);
  */
 void beginWindingRoutine()
 {
-	userDefinedSettings.routineRunning = true;
+  userDefinedSettings.routineRunning = true;
 
   if ((strcmp(userDefinedSettings.direction.c_str(), "CW") == 0)) 
   {
     motor.setMotorDirection(1);
   }
 
-	Serial.println("[STATUS] - Begin winding routine");
+  Serial.println("[STATUS] - Begin winding routine");
 }
 
 void setup()
@@ -66,49 +66,50 @@ void setup()
   Serial.begin(9600);
   delay(5000);
 
-	// Prepare pins
-	pinMode(directionalPinA, OUTPUT);
-	pinMode(directionalPinB, OUTPUT);
+  // Prepare pins
+  pinMode(directionalPinA, OUTPUT);
+  pinMode(directionalPinB, OUTPUT);
   pinMode(externalButton, INPUT);
 
   beginWindingRoutine();
   motor.determineMotorDirectionAndBegin();
 }
 
+void awaitWhileListening(int pauseInSeconds)
+{
+  // While waiting for the 1 second to pass, actively monitor/listen for button press.
+  int delayEnd = millis() + (1000 * pauseInSeconds);
+  while (millis() < delayEnd) {
+    // get physical button state
+    int buttonState = digitalRead(externalButton);
+
+    if (buttonState == HIGH) {
+      Serial.println("[STATUS] - Button pressed");
+      userDefinedSettings.routineRunning = !userDefinedSettings.routineRunning;
+    }
+  }
+}
+
 void loop()
 {
-  // get physical button state
-	int buttonState = digitalRead(externalButton);
-
-	if (buttonState == HIGH) {
-    Serial.println("[STATUS] - Button pressed");
-    userDefinedSettings.routineRunning = !userDefinedSettings.routineRunning;
-  }
-
-  if ((strcmp(userDefinedSettings.direction.c_str(), "BOTH") == 0) && currentSeconds >= userDefinedSettings.timeToRotateInSeconds && userDefinedSettings.routineRunning)
+  if (userDefinedSettings.routineRunning)
   {
-    currentSeconds = 0;
-    motor.stop();
-    delay((userDefinedSettings.timeToPauseInSeconds) * 1000);
-
-    int currentDirection = motor.getMotorDirection();
-    motor.setMotorDirection(!currentDirection);
-    Serial.println("[STATUS] - Motor Pause - mode is BOTH");
-  
-    motor.determineMotorDirectionAndBegin();
-  } 
-  else if (currentSeconds >= userDefinedSettings.timeToRotateInSeconds && userDefinedSettings.routineRunning) 
-  {
-    currentSeconds = 0;
-    Serial.println("[STATUS] - Motor Pause");
-    motor.stop();
-    delay((userDefinedSettings.timeToPauseInSeconds) * 1000);
-
-    motor.determineMotorDirectionAndBegin();
-  } else if (!userDefinedSettings.routineRunning) {
+    if (currentSeconds >= userDefinedSettings.timeToRotateInSeconds)
+    {
+      currentSeconds = 0;
+      motor.stop();
+      awaitWhileListening(userDefinedSettings.timeToPauseInSeconds);
+      if (strcmp(userDefinedSettings.direction.c_str(), "BOTH") == 0)
+      {
+        int currentDirection = motor.getMotorDirection();
+        motor.setMotorDirection(!currentDirection);
+        Serial.println("[STATUS] - Motor Pause - mode is BOTH");
+      }
+      motor.determineMotorDirectionAndBegin();
+    }
+  } else {
     motor.stop();
   }
-
-	delay(1000);
+  awaitWhileListening(1);
   currentSeconds++;
 }
