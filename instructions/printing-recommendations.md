@@ -17,10 +17,10 @@
 1. Print with 25% infill
     * This will the increase overall rigidity of the model, especially when dealing with the motor's torque.
     * This will also give you a "premium feeling" product.
-1. [If your printer has a tendency elephant foot](https://pick3dprinter.com/elephant_foot_3d_printing/), you'll need to file down some of the pieces.
+1. [If your printer has a tendency elephant foot](https://3dprinterly.com/how-to-fix-bottom-of-3d-print-that-looks-bad/), you'll need to file down some of the pieces.
     * For example, the `mounting_dowel`'s outter lip will need to be filed down so the `mounting_dowel_sleeve` can easily slip over it.
 
-## Recommended Printing Orientation and Duration by Model
+## Recommended Printing Orientation and Print Duration by Model
 
 | Model Name | Quantity To Print | Printing Time Per Unit | Printing Orientation |
 | :------------: | :------------: | :----------------------------------: | :--------:| 
@@ -40,4 +40,4 @@
 | `watch_mount_v7` | 1 | 2 hours | ![watch_mount](images/printing/watch_mount_v7.png) |
 | `multi_clip` | 4 | 0.25 hours p/unit | ![multi_clip](images/printing/multi_clip_v1.png) |
 | `spring_holder_v3` | 1 | 1 hours | ![spring_holder_v3](images/printing/spring_holder_v3.png) |
-| `top_hat_v2` | 4 | 0.25 hours | ![top_hat_v2](images/printing/top_hat_v2.png) |
+| `top_hat_v2` | 1 | 0.25 hours | ![top_hat_v2](images/printing/top_hat_v2.png) |
