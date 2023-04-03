@@ -35,3 +35,7 @@
 1. [Build Guide](./instructions/build-guide.md)
 1. [Wiring Diagram](./instructions/wiring-diagram.md)
 1. [Upload the Code](./instructions/upload-code.md)
+
+## Supercharge your OSWW!
+- Checkout [Winderoo](https://github.com/mwood77/winderoo), which adds more complex behaviour and a GUI to your build!
+- **Note!** This upgrade requires a different microcontroller.
