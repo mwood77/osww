@@ -1,7 +1,7 @@
 > [👈 Back to main page](../README.md)
 
-# Wiring Diagram
-![fritzing wiring diagram](./images//osww.svg)
+# Wiring Diagram - OSWW
+![fritzing wiring diagram](./images/osww.svg)
 
 <div align="center">
     <a href="./images/osww.pdf">Is the image hard to view? Open the PDF instead</a>

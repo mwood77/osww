@@ -37,5 +37,5 @@
 1. [Upload the Code](./instructions/upload-code.md)
 
 ## Supercharge your OSWW!
+> This upgrade requires a different microcontroller
 - Checkout [Winderoo](https://github.com/mwood77/winderoo), which adds more complex behaviour and a GUI to your build!
-- **Note!** This upgrade requires a different microcontroller.

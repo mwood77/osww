@@ -203,7 +203,7 @@
     <div>
 1. Insert the motor into the large diameter bore, through the back and mid plate.
 1. Slide the `motor_drive_pulley_v3` onto the end of the motor
-1. [Complete the wiring diagram](./wiring-diagram.md)
+1. [Complete the wiring diagram](./wiring-diagram.md); If you're building a **[Winderoo](https://github.com/mwood77/winderoo)** enabled winder, [see the Winderoo wiring diagram instead](https://github.com/mwood77/winderoo/blob/main/docs/wiring-diagram.md).
 1. Insert the completed circuit between mid plate and back plate. You can affix the PCBs and switch using hot glue.
 1. Mount a drive belt; loop it around the motor's drive pulley, the central pulley, and the tensioner pulley.
     - If the belt is too loose, try a smaller diameter belt, or swivel the tensioner to tighten the belt.
