@@ -6,6 +6,8 @@
 </div>
 
 <div align="center">
+  <a href="https://www.youtube.com/watch?v=BJKpY6Zp8BI" target="_blank"><strong>👉 See OSWW & Winderoo in action on youtube 👈</strong></a>
+  <br>
   <br>
   <img src="./instructions/images/splash-image.jpg" alt="OSWW - The Open Source Watch Winder" width="600">
   <br>
