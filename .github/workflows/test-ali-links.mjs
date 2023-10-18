@@ -14,7 +14,7 @@ const search = async (item) => {
     return await driver.findElements(By.className('not-found-page'))
 }
 
-content('./docs/bom-requirements.md')
+content('./instructions/bom-requirements.md')
     .then(
         result => {
             const sanitizedMD = result.split('/_')
