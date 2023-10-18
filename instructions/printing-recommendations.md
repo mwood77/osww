@@ -1,6 +1,7 @@
 > [👈 Back to main page](../README.md)
 
 # Printing Recommendations
+> [!NOTE]
 > Total time spent printing is 24 hours per winding unit
 >
 > Total filament used is approximately 300g per winder
