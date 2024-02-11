@@ -5,8 +5,8 @@ import Firefox from 'selenium-webdriver/firefox.js'
 const links = [];
 let driver;
 
-const bomDocument = './docs/bom-requirements.md';
-const bomDocumentPathForLocalTesting = '../../docs/bom-requirements.md';
+const bomDocument = './instructions/bom-requirements.md';
+const bomDocumentPathForLocalTesting = '../../instructions/bom-requirements.md';
 
 const content = async(file) => {
     return await readFile(file, 'utf8')
