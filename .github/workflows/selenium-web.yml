@@ -1,34 +1,27 @@
 name: Aliexpress Product Checker
 
 on:
+  pull_request:
   workflow_dispatch:
   schedule:
     - cron: 0 9 * * 1 # 9AM every monday
 
 jobs:
-  test:
+  check-aliexpress-links:
     runs-on: ubuntu-latest
-
-    container:
-      image: node:19
-
-    services:
-      selenium:
-        image: selenium/standalone-chrome
-        options: --shm-size=2gb
 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 19
+          node-version: 18
 
-      - uses: abhi1693/setup-browser@v0.3.4
-        with:
-          browser: firefox
-
-      - run: apt-get update && apt-get install -y wget bzip2 libxtst6 libgtk-3-0 libx11-xcb-dev libdbus-glib-1-2 libxt6 libpci-dev && rm -rf /var/lib/apt/lists/*
+      # - run: sudo apt-get install firefox
 
       - run: npm i selenium-webdriver
+
       - run: npx node .github/workflows/test-ali-links.mjs
+        env:
+          DISPLAY: :0
+          MOZ_HEADLESS: 1
