@@ -1,3 +1,5 @@
+[![Aliexpress Product Checker](https://github.com/mwood77/osww/actions/workflows/selenium-web.yml/badge.svg?branch=main)](https://github.com/mwood77/osww/actions/workflows/selenium-web.yml)
+
 <div align="center">  
   <h2>
     OSWW
