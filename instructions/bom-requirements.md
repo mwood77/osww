@@ -33,7 +33,7 @@ This means that you'll be able to construct a 3-watch winder. Remember that the 
 > While most of these components are standardized, I will not be able to assist you if you purchase your components from a separate supplier, as the winder was designed around the components (as supplied) beneath.
 
 > [!CAUTION]
-> If you're planning a [Widneroo](https://github.com/mwood77/winderoo) build, do not purchase a Raspberry Pi Pico. Purchase an ESP32 instead to save some money and avoid future headaches. You can find a link to purchase an ESP32 in [Winderoo's Bill of Materials](https://github.com/mwood77/winderoo/blob/pwm-motor-control/docs/bom-requirements.md#total-cost-of-required-parts).
+> If you're planning a [Widneroo](https://github.com/mwood77/winderoo) build, do not purchase a Raspberry Pi Pico. Purchase an ESP32 instead to save some money and avoid future headaches. You can find a link to purchase an ESP32 in [Winderoo's Bill of Materials](https://github.com/mwood77/winderoo/blob/main/docs/bom-requirements.md).
 
 
 |     |  Quantity per Order | Link / Part Name                                                             |  Comments                                              |  Cost Incl. Shipping |
