@@ -19,7 +19,7 @@
 ## Required parts
 The following parts list will allow you to build:
 - 1x powered winder (required)
-- 2x unpowered winders (optional)
+- 2x un-powered winders (optional)
 
 This means that you'll be able to construct a 3-watch winder. Remember that the system is modular, so if you decide to only build a single powered winder, that's ok.
 
@@ -28,7 +28,7 @@ This means that you'll be able to construct a 3-watch winder. Remember that the 
 - **$40.00 (February 2023)**
 
 > [!CAUTION]
-> If you're planning a [Widneroo](https://github.com/mwood77/winderoo) build, do not purchase a Raspberry Pi Pico. Purchase an ESP32 instead to save some money and avoid future headaches. You can find a link to purchase an ESP32 in [Winderoo's Bill of Materials](https://github.com/mwood77/winderoo/blob/main/docs/bom-requirements.md).
+> If you're planning a [Winderoo](https://github.com/mwood77/winderoo) build, do not purchase a Raspberry Pi Pico. Purchase an ESP32 instead to save some money and avoid future headaches. You can find a link to purchase an ESP32 in [Winderoo's Bill of Materials](https://github.com/mwood77/winderoo/blob/main/docs/bom-requirements.md).
 
 
 |     |  Quantity per Order | Link / Part Name                                                             |  Comments                                              |  Cost Incl. Shipping |
@@ -36,7 +36,7 @@ This means that you'll be able to construct a 3-watch winder. Remember that the 
 | 🔲 | 1               | [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)      |    Wireless: **NO** & GPIO Headers: **NO**                                                                   | $5.00 |
 | 🔲 | 1               | [608ZZ bearing pack](https://nl.aliexpress.com/item/1005005321486587.html)                  | 10 bearings per pack                                                  | $6.00 |
 | 🔲 | 1               | [Electric Motor with gear reduction](https://www.aliexpress.com/item/32987942205.html)   | Select: "40 TPM" & "6V". If this is unavailable, buy a `JGA25-370` motor package with planetary gear reduction to run at 35RPM & 5V                                                | $6.00 |
-| 🔲 | 1               | [L298N Driver Board]([https://s.click.aliexpress.com/e/_DlNaVcV](https://nl.aliexpress.com/item/32392774289.html))                   | Single unit                                                           | $3.15 |
+| 🔲 | 1               | [L298N Driver Board](https://nl.aliexpress.com/item/32392774289.html)                   | Single unit                                                           | $3.15 |
 | 🔲 | 1               | [Generic Casette Belts](https://www.aliexpress.com/item/4000121675975.html)       | Note - you may be able to get away with regular elastic bands, but these will long outlast elastic bands                | $2.50 |
 | 🔲 | 1               | [M3x20mm Screws](https://aliexpress.com/item/1005005483315023.html)                       | Select: "M3 50pcs" & "Length 20mm"                                    | $4.00 |
 | 🔲 | 1               | [M3 Heat Set Nuts](https://aliexpress.com/item/1005003582355741.html?)                     | Select: "M3(OD 5mm)" & "Length 5mm 50pcs"                             | $3.50 |
